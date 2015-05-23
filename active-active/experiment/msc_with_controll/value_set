@@ -1,0 +1,5 @@
+block_size 2 4 10 20
+ra_sequence 2 4
+ra_distance 2 3 4
+ra_block 2 3
+cache_size 100 50

@@ -1,0 +1,6 @@
+redirect_control_algorithm redirect_control_longevity redirect_control_max_queue_length performance "IOPS, stripes per step" "latency, us"
+false - - 25532800 25532800 2348,49
+true 10 10 25532800 25532800 2349
+true 10 20 25532800 25532800 2349
+true 20 10 25532800 25532800 2349
+true 20 20 25532800 25532800 2349

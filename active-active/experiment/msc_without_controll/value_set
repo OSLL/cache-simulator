@@ -1,0 +1,4 @@
+read_block_size 2 4 10 20
+CACHE_SIZE 20 50 80 100
+LOAD_BALANCING_ALGORITHM round_robin min_queue_depth
+RR_NODE_WORKLOAD 1 5 10

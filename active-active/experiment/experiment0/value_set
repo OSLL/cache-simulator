@@ -1,0 +1,3 @@
+redirect_control_algorithm false true
+redirect_control_longevity 10 20
+redirect_control_max_queue_length 10 20

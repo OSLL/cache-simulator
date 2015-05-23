@@ -1,0 +1,38 @@
+[main]
+;----------- Modeling parameters
+MODELING_STEPS_NUMBER=10
+
+;----------- LB parameters
+RR_NODE_WORKLOAD=1
+; Raid size in stripes, one stripe = 128 bytes
+RAID_SIZE=838860800
+;----------- Latencies
+; Time in microseconds (1 microsecond = 10^-6 second)
+APP_LB_REQUEST_SEND_LATENCY=0
+APP_SP_DATA_SEND_LATENCY=0
+LB_SELECTING_LATENCY=0
+RAID_SP_REQUEST_SEND_LATENCY=4000
+RAID_SP_DATA_SEND_LATENCY=4000
+CACHE_CHECKUP_LATENCY=100
+CACHE_DATA_RETRIVAL_LATENCY=150
+INTERCONNECT_CHECKUP_LATENCY=200
+INTERCONNECT_DATA_LOAD_LATENCY=200
+
+;----------- Cache parameters
+; selected in current experiment as 10% of raid space
+CACHE_SIZE=PLACEHOLDER0
+;83886080
+CACHE_COHERENCY=true
+CACHE_MISS_REDIRECT_FLAG=false
+
+;----------- Smart ReadAhead parameters
+; selected in current experiment as 10% of cache capacity
+READ_AHEAD_SEQUENCE_LENGTH=PLACEHOLDER1
+READ_AHEAD_DISTANCE=4
+READ_AHEAD_BLOCK=PLACEHOLDER2
+
+;----------- Read trace
+; READ_TRACE_TYPE={random,sequential,user-defined}
+READ_TRACE_TYPE="user-defined"
+READ_TRACE_FILE="/home/vood/ws/active-active/simulator/rdtrace.st0rage.out"
+READ_BLOCK_SIZE=1
